@@ -1,115 +1,114 @@
-Claro. Abaixo está uma **simulação completa de entrevista de levantamento de requisitos**, com o gerente explicando o problema e o programador júnior fazendo perguntas até chegar a uma solução.
 
- ### Simulação de entrevista — Sistema de Agenda para Clínica
+ ### Entrevista — Sistema de Agenda para Clínica
 
  **Personagens:**
 
  - **Gerente:** responsável pela clínica.
-- **Programador Júnior:** responsável por entender o problema e propor uma solução.
+- **Antenor Santos, Helder Brandão e Willians Júnior:** responsáveis por entenderem o problema e propor uma solução.
 
 ---
 
- **Programador Júnior:** Bom dia. Gostaria primeiro de entender como funciona o processo de agendamento atualmente. Como os pacientes marcam uma consulta?
+ **Antenor:** Bom dia. Gostaria primeiro de entender como funciona o processo de agendamento atualmente. Como os pacientes marcam uma consulta?
 
  **Gerente:** Bom dia. Atualmente eles entram em contato principalmente pelo WhatsApp ou telefone. A recepcionista verifica se o profissional está disponível e marca o horário.
 
- **Programador Júnior:** E onde esse horário é registrado?
+ **Willians Júnior:** E onde esse horário é registrado?
 
  **Gerente:** Esse é um dos nossos problemas. Às vezes a recepcionista anota em uma agenda de papel, às vezes em uma planilha e, em alguns casos, fica registrado apenas na conversa do WhatsApp.
 
- **Programador Júnior:** Então não existe um único lugar onde todos conseguem consultar os agendamentos?
+ **Helder:** Então não existe um único lugar onde todos conseguem consultar os agendamentos?
 
  **Gerente:** Exatamente.
 
- **Programador Júnior:** Isso já causou algum problema?
+ **Antenor Santos:** Isso já causou algum problema?
 
  **Gerente:** Sim. Já aconteceu de duas pessoas serem marcadas para o mesmo horário. Também acontece de um profissional não saber que houve uma alteração no horário de um paciente.
 
- **Programador Júnior:** Entendi. E como vocês controlam os pacientes que faltam?
+ **Willians Júnior:** Entendi. E como vocês controlam os pacientes que faltam?
 
  **Gerente:** Atualmente não controlamos direito. A recepcionista pode perceber que o paciente não apareceu, mas isso não fica registrado de maneira organizada.
 
- **Programador Júnior:** Então seria importante registrar o status de cada consulta, por exemplo: agendada, confirmada, atendida, cancelada ou faltou?
+ **Helder:** Então seria importante registrar o status de cada consulta, por exemplo: agendada, confirmada, atendida, cancelada ou faltou?
 
  **Gerente:** Sim. Isso ajudaria bastante.
 
- **Programador Júnior:** Quem precisaria utilizar o sistema?
+ **Antenor** Quem precisaria utilizar o sistema?
 
  **Gerente:** A recepcionista, os profissionais de saúde e os pacientes.
 
- **Programador Júnior:** Todos teriam o mesmo acesso?
+ **Willians Júnior:** Todos teriam o mesmo acesso?
 
  **Gerente:** Não. A recepcionista precisa controlar os agendamentos. Os profissionais precisam consultar sua própria agenda. Já os pacientes precisam conseguir marcar e acompanhar suas consultas.
 
- **Programador Júnior:** Entendi. Sobre os profissionais, um paciente pode escolher qual profissional deseja consultar?
+ **Helder:** Entendi. Sobre os profissionais, um paciente pode escolher qual profissional deseja consultar?
 
  **Gerente:** Sim. Temos profissionais diferentes e cada um possui seus próprios horários.
 
- **Programador Júnior:** E os profissionais possuem horários fixos?
+ **Antenor:** E os profissionais possuem horários fixos?
 
  **Gerente:** Na maioria dos casos sim, mas eventualmente eles podem alterar a disponibilidade.
 
- **Programador Júnior:** Nesse caso, o sistema deveria permitir que a recepcionista ou o profissional bloqueasse determinados horários?
+ **Willians:** Nesse caso, o sistema deveria permitir que a recepcionista ou o profissional bloqueasse determinados horários?
 
  **Gerente:** Sim. Por exemplo, se o profissional tiver uma reunião ou precisar sair, aquele horário não pode ficar disponível para pacientes.
 
- **Programador Júnior:** Perfeito. E quanto à duração das consultas? Todas têm o mesmo tempo?
+ **Helder:** Perfeito. E quanto à duração das consultas? Todas têm o mesmo tempo?
 
  **Gerente:** Não necessariamente. Alguns atendimentos duram 30 minutos e outros podem durar uma hora.
 
- **Programador Júnior:** Então o sistema precisa considerar a duração do atendimento antes de disponibilizar o próximo horário.
+ **Antenor:** Então o sistema precisa considerar a duração do atendimento antes de disponibilizar o próximo horário.
 
  **Gerente:** Exatamente.
 
- **Programador Júnior:** Vou fazer uma pergunta importante: quando alguém tentar marcar uma consulta, o sistema deve verificar automaticamente se aquele horário já está ocupado?
+ **Willians:** Vou fazer uma pergunta importante: quando alguém tentar marcar uma consulta, o sistema deve verificar automaticamente se aquele horário já está ocupado?
 
  **Gerente:** Sim. Esse é justamente um dos principais problemas que queremos resolver.
 
- **Programador Júnior:** Então, se alguém tentar agendar às 14h e já existir uma consulta nesse horário, o sistema deve impedir o agendamento.
+ **Helder:** Então, se alguém tentar agendar às 14h e já existir uma consulta nesse horário, o sistema deve impedir o agendamento.
 
  **Gerente:** Isso. E seria bom mostrar os horários disponíveis para evitar esse problema.
 
- **Programador Júnior:** Certo. Sobre os pacientes, quais informações precisamos guardar?
+ **Antenor:** Certo. Sobre os pacientes, quais informações precisamos guardar?
 
  **Gerente:** Nome, telefone, talvez CPF, data de nascimento e histórico das consultas.
 
- **Programador Júnior:** E precisamos guardar informações médicas também?
+ **Willians:** E precisamos guardar informações médicas também?
 
  **Gerente:** Não nesse primeiro momento. Queremos apenas resolver a questão dos agendamentos.
 
- **Programador Júnior:** Ótimo. Então podemos manter o primeiro sistema focado na agenda e não tentar resolver tudo de uma vez.
+ **Helder:** Ótimo. Então podemos manter o primeiro sistema focado na agenda e não tentar resolver tudo de uma vez.
 
  **Gerente:** Concordo.
 
- **Programador Júnior:** Outra questão: o paciente agenda diretamente pelo sistema ou ainda poderá ligar e mandar mensagem pelo WhatsApp?
+ **Antenor:** Outra questão: o paciente agenda diretamente pelo sistema ou ainda poderá ligar e mandar mensagem pelo WhatsApp?
 
  **Gerente:** Ele poderá continuar usando telefone e WhatsApp. A recepcionista faria o cadastro no sistema nesses casos. Mas gostaríamos que, futuramente, o paciente também pudesse fazer o agendamento sozinho.
 
- **Programador Júnior:** Entendi. Então inicialmente podemos centralizar todos os agendamentos no sistema, independentemente de onde o pedido veio.
+ **Willians:** Entendi. Então inicialmente podemos centralizar todos os agendamentos no sistema, independentemente de onde o pedido veio.
 
  **Gerente:** Exatamente.
 
- **Programador Júnior:** E vocês gostariam de algum tipo de lembrete para diminuir as faltas?
+ **Helder:** E vocês gostariam de algum tipo de lembrete para diminuir as faltas?
 
  **Gerente:** Sim. Seria muito interessante enviar uma mensagem lembrando o paciente da consulta.
 
- **Programador Júnior:** Podemos considerar isso como uma funcionalidade do sistema. O paciente receberia um lembrete antes da consulta e poderia confirmar ou solicitar o cancelamento.
+ **Antenor:** Podemos considerar isso como uma funcionalidade do sistema. O paciente receberia um lembrete antes da consulta e poderia confirmar ou solicitar o cancelamento.
 
  **Gerente:** Gostei dessa ideia.
 
- **Programador Júnior:** E quando o paciente cancelar?
+ **Willians:** E quando o paciente cancelar?
 
  **Gerente:** O horário deveria ficar disponível novamente para outra pessoa.
 
- **Programador Júnior:** Perfeito. E se ele simplesmente não aparecer?
+ **Helder:** Perfeito. E se ele simplesmente não aparecer?
 
  **Gerente:** A recepcionista ou o profissional deveria poder marcar como "faltou".
 
- **Programador Júnior:** Assim podemos manter um histórico de faltas por paciente.
+ **Antenor:** Assim podemos manter um histórico de faltas por paciente.
 
  **Gerente:** Sim.
 
- **Programador Júnior:** Acho que já tenho uma visão clara do problema. Vou resumir para confirmar se entendi corretamente.
+ **Willians:** Acho que já tenho uma visão clara do problema. Vou resumir para confirmar se entendi corretamente.
 
  > Atualmente a clínica possui agendamentos espalhados entre telefone, WhatsApp, papel e planilhas. Isso permite conflitos de horário e dificulta o acompanhamento das consultas e faltas.
 >
@@ -119,7 +118,7 @@ Claro. Abaixo está uma **simulação completa de entrevista de levantamento de 
 
  **Gerente:** É exatamente isso que precisamos.
 
- **Programador Júnior:** Então eu começaria com estas funcionalidades principais:
+ **Helder:** Então eu começaria com estas funcionalidades principais:
 
  1. **Cadastro de pacientes**
    - Nome
@@ -160,19 +159,19 @@ Claro. Abaixo está uma **simulação completa de entrevista de levantamento de 
 
  **Gerente:** Gostei. Mas como você garantiria que duas pessoas não fossem colocadas no mesmo horário?
 
- **Programador Júnior:** Eu faria essa validação no sistema antes de salvar o agendamento. Mas não confiaria somente na tela: o banco de dados também teria uma regra para impedir conflitos. Assim, mesmo que duas pessoas tentem agendar praticamente ao mesmo tempo, o sistema não permitiria que o mesmo profissional tivesse dois atendimentos conflitantes.
+ **Antenor:** Eu faria essa validação no sistema antes de salvar o agendamento. Mas não confiaria somente na tela: o banco de dados também teria uma regra para impedir conflitos. Assim, mesmo que duas pessoas tentem agendar praticamente ao mesmo tempo, o sistema não permitiria que o mesmo profissional tivesse dois atendimentos conflitantes.
 
  **Gerente:** E se a recepcionista estiver usando o sistema e o profissional também estiver alterando a agenda?
 
- **Programador Júnior:** O sistema deve trabalhar com os dados centralizados. Quando alguém consultar ou alterar a agenda, estará trabalhando sobre a mesma fonte de dados. Também podemos registrar quem fez cada alteração, para termos um histórico.
+ **Willians:** O sistema deve trabalhar com os dados centralizados. Quando alguém consultar ou alterar a agenda, estará trabalhando sobre a mesma fonte de dados. Também podemos registrar quem fez cada alteração, para termos um histórico.
 
  **Gerente:** Isso seria importante. Às vezes precisamos saber quem alterou um horário.
 
- **Programador Júnior:** Então eu adicionaria também um **histórico de alterações** para os agendamentos.
+ **Helder:** Então eu adicionaria também um **histórico de alterações** para os agendamentos.
 
  **Gerente:** Perfeito. O que você faria primeiro?
 
- **Programador Júnior:** Eu começaria pelo **MVP**, para resolver primeiro o problema principal:
+ **Antenor:** Eu começaria pelo **MVP**, para resolver primeiro o problema principal:
 
  > **Paciente → Profissional → Data/Horário → Agendamento → Status**
 
@@ -180,7 +179,7 @@ Claro. Abaixo está uma **simulação completa de entrevista de levantamento de 
 
  **Gerente:** Muito bom. Pode começar a desenvolver.
 
- **Programador Júnior:** Antes de desenvolver, eu documentaria os requisitos e desenharia o fluxo da agenda. Assim conseguimos validar com a clínica se o sistema realmente representa o processo de vocês antes de começar a implementação.
+ **Willians Júnior:** Antes de desenvolver, eu documentaria os requisitos e desenharia o fluxo da agenda. Assim conseguimos validar com a clínica se o sistema realmente representa o processo de vocês antes de começar a implementação.
 
 ---
 
