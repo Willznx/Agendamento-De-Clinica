@@ -85,6 +85,3 @@ python -m pytest          # testes automatizados
 ## 7. Melhorias futuras
 Login por perfil, lembrete por WhatsApp, agenda semanal, exportar CSV, horários de
 funcionamento por profissional.
-
-Logo do projeto
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/4abc1651-cb2d-4207-944c-bfab0bd8ee7f" />
