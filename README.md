@@ -1,5 +1,4 @@
 # Agenda de Atendimentos de uma Clínica Popular
-https://chatgpt.com/s/m_6ae1e71f1d4c8191af342e9fca36024e
 
 Projeto 02 — Desenvolvimento Rápido de Aplicações (Python + Streamlit + SQLite).
 
