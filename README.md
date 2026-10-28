@@ -85,3 +85,9 @@ python -m pytest          # testes automatizados
 ## 7. Melhorias futuras
 Login por perfil, lembrete por WhatsApp, agenda semanal, exportar CSV, horários de
 funcionamento por profissional.
+
+## Autores
+
+Antenor Santos
+Helder Brandão
+Willians Júnior - willianstorres350@gmail.com
