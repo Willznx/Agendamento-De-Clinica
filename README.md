@@ -77,7 +77,7 @@ python -m pytest          # testes automatizados
 | `test_app.py` | Testes de fumaça: cada página abre sem erro |
 | `seed.py` | Dados de exemplo |
 
-<img src="<img width="1439" height="811" alt="Captura de tela 2026-10-28 132601" src="https://github.com/user-attachments/assets/126e4437-f3ad-4ad3-998f-56eea4163271" />
+<img width="1439" height="811" alt="Captura de tela 2026-10-28 132601" src="https://github.com/user-attachments/assets/126e4437-f3ad-4ad3-998f-56eea4163271" />
 
 
 ## 6. Decisões da equipe
