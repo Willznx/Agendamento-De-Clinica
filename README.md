@@ -1,5 +1,9 @@
 # Agenda de Atendimentos de uma Clínica Popular
 
+<p align="center">
+  <img src="Agenda%20de%20Atendimentos%20M%C3%A9dicos.png" alt="Banner da Agenda de Atendimentos Médicos" width="100%">
+</p>
+
 Projeto 02 — Desenvolvimento Rápido de Aplicações (Python + Streamlit + SQLite).
 
 ## 1. Problema
