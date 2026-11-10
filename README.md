@@ -1,7 +1,17 @@
-# APOIO: Agenda de Pronto Otimização de Indicações e Orientações.
+<p align="center">
+  <img src="assets/marca-logo.png" alt="MARCA — Agenda de Atendimentos" width="420">
+</p>
 
 <p align="center">
-  <img src="Agenda%20de%20Atendimentos%20M%C3%A9dicos.png" alt="Banner da Agenda de Atendimentos Médicos" width="100%">
+  <b>MARCA: Módulo de Agendamento, Registro e Controle de Atendimentos</b><br>
+  <i>Sua vez, no horário certo.</i>
+</p>
+
+<p align="center">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-0E7C86?logo=python&logoColor=white">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-1.50%2B-F5A524?logo=streamlit&logoColor=white">
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-banco%20local-0B3B40?logo=sqlite&logoColor=white">
+  <img alt="Testes" src="https://img.shields.io/badge/testes-23%20passando-2E9E6B">
 </p>
 
 Projeto 02 — Desenvolvimento Rápido de Aplicações (Python + Streamlit + SQLite).
@@ -34,12 +44,12 @@ faltas não são acompanhadas.
 | RF10 | Relatório de atendimentos, cancelamentos e faltas por período | Read |
 
 **Regras de negócio**
-- RN1: um profissional não pode ter dois atendimentos no mesmo horário.
-- RN2: um paciente não pode ter dois atendimentos no mesmo horário.
-- RN3: atendimento **cancelado** libera o horário; reativá-lo exige o horário ainda livre.
-- RN4: paciente/profissional com histórico não pode ser excluído (preserva relatórios).
-- RN5: excluir e cancelar exigem confirmação explícita.
-- RN6: guardar só o necessário (nome e telefone); **sem dados clínicos sensíveis**
+* RN1: um profissional não pode ter dois atendimentos no mesmo horário.
+* RN2: um paciente não pode ter dois atendimentos no mesmo horário.
+* RN3: atendimento **cancelado** libera o horário; reativá-lo exige o horário ainda livre.
+* RN4: paciente/profissional com histórico não pode ser excluído (preserva relatórios).
+* RN5: excluir e cancelar exigem confirmação explícita.
+* RN6: guardar só o necessário (nome e telefone); **sem dados clínicos sensíveis**
   (LGPD — dados de saúde são dados sensíveis).
 
 **Não funcionais:** roda localmente com um único arquivo de banco; interface em português;
@@ -54,8 +64,8 @@ atendimentos (id, paciente_id → pacientes, profissional_id → profissionais,
               data_hora 'AAAA-MM-DD HH:MM', servico, situacao, observacao)
 ```
 
-- `situacao` ∈ {agendado, realizado, cancelado, falta} (restrição `CHECK`).
-- Índice único parcial `(profissional_id, data_hora) WHERE situacao <> 'cancelado'`
+* `situacao` ∈ {agendado, realizado, cancelado, falta} (restrição `CHECK`).
+* Índice único parcial `(profissional_id, data_hora) WHERE situacao <> 'cancelado'`
   garante RN1 no próprio banco, mesmo se dois usuários agendarem ao mesmo tempo.
 
 ## 4. Como rodar
@@ -82,14 +92,13 @@ python -m pytest          # testes automatizados
 
 ## 6. Decisões da equipe
 
-- **Regras separadas da interface** (`db.py`): permite testar sem abrir o navegador.
-- **Cancelar ≠ excluir:** cancelar mantém o histórico para o relatório de faltas.
-- **Só horários livres no formulário:** previne o erro em vez de só avisar depois.
-- **Intervalos de 30 min, 08:00–17:30:** ajuste a lista `HORARIOS` em `app.py` após
+* **Regras separadas da interface** (`db.py`): permite testar sem abrir o navegador.
+* **Cancelar ≠ excluir:** cancelar mantém o histórico para o relatório de faltas.
+* **Só horários livres no formulário:** previne o erro em vez de só avisar depois.
+* **Intervalos de 30 min, 08:00–17:30:** ajuste a lista `HORARIOS` em `app.py` após
   confirmar com a clínica.
-- **Sem login:** fora do escopo de 8 semanas; melhoria futura.
+* **Sem login:** fora do escopo de 8 semanas; melhoria futura.
 
 ## 7. Melhorias futuras
 Login por perfil, lembrete por WhatsApp, agenda semanal, exportar CSV, horários de
 funcionamento por profissional.
-
