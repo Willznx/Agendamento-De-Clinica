@@ -1,7 +1,9 @@
 <p align="center">
-  <img src="assets/marca-logo.png" alt="MARCA — Agenda de Atendimentos" width="420">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="marca-logo-fundo-escuro.png">
+    <img src="marca-logo.png" alt="MARCA — Agenda de Atendimentos" width="420">
+  </picture>
 </p>
-
 <p align="center">
   <b>MARCA: Módulo de Agendamento, Registro e Controle de Atendimentos</b><br>
   <i>Sua vez, no horário certo.</i>
